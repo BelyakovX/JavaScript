@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+    var a = [2];
+    num = 2;
+    while ( num <= 100) {
+    var numcheck = 1;
+    for ( var i = 0; i < a.length; i++) {
+    if ( num % a[ i ] === 0) {
+            numcheck = 0;
+        }
+    }if ( numcheck === 1 ) {
+        a.push(num);
+    }
+    num++;
+}
+console.log(a);
+</script>
